@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+*{
+  color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section{
+  width: 100%;
+}
+
+.bordaRgb{
+  position: relative;
+  z-index: 100;
+  
+}
+
+
+
+ .colorido{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  /* z-index: 1; */
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+  filter: blur(0.6rem);
+}
+
+.container{
+  position: relative;
+  width: 112px;
+  height: 48px;
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
+}
+
+
+.secFinal{
+  position: relative;
+  border-top: 1px solid; 
+  border-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 10%,  rgba(2, 132, 199, 0.65) 50%,
+   rgba(0, 0, 0, 0) 90%) 1; 
+}
+
+.secFinal::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 10px;
+  border-radius: 100%;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.111), rgba(255, 255, 255, 0.03) 80%, transparent  );
+  filter: blur(1rem);
+}
+
+.bgFooter{
+ position: absolute;
+width: 100%;
+height: 100%;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+
+background: linear-gradient(90deg, #06B6D4 0%, #1E40AF 100%);
+mix-blend-mode: normal;
+opacity: 0.15;
+filter: blur(5rem);
+border-radius: 0px; 
+z-index: -1;
+
+}
+
+footer{
+  position: relative;
+  z-index: 0;
+}
+
+.card1{
+  flex-grow: 2;
+  flex-basis: 250px;
+}
+
+.card2{
+  flex-grow: 1;
+  flex-basis: 250px;
+}
+
+header{
+  position: relative;
+  z-index: 0;
+}
+
+.headerBg{
+  position: absolute;
+  width: 1225px;
+  height: 1558.14px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -35%);
+  
+  background: radial-gradient(49.38% 45.34% at 50% 0%,rgb(154, 233, 255) 0%, rgba(94, 176, 239, 0.5) 30%,
+   rgba(0, 0, 0, 0) 100%);
+  border-radius: 0px;
+  filter: blur(11rem);
+}
+
+.iconHover{
+  transition: 0.3s
+}
+
+.iconHover:hover{
+  scale: 1.1;
+}
+
+
+
