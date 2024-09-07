@@ -17,7 +17,7 @@ function App() {
         <nav className="w-full h-10 flex justify-between items-center sm:px-10  xl:px-56 pt-8">
           <div className='font-bold flex items-center gap-x-1'>
             <img src={logo} alt="" />
-              
+              Cobalt
           </div>
           
           <div className="flex gap-6">
