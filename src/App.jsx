@@ -26,7 +26,7 @@ function App() {
           </div>
         </nav>
 
-        <section className="flex flex-col justify-center items-center gap-y-12 mb-24 mt-28 lg:mt-52">
+        <section className="flex flex-col justify-center items-center gap-y-12 mb-24 mt-28 lg:mt-52 px-6 sm:px-10  xl:px-56">
           <h1 className="flex justify-center font-bold text-5xl lg:text-7xl text-center ">Unleash The Power Of <br /> intuitive finance</h1>
           <p className=" text-center justify-center text-slate-300 text-xl lg:text-2xl max-w-5xl font-normal">Say goodbye to the outdated financial tools. Every small business owner,
           regardless of the background, can now manage their business like a pro. Simple. 
@@ -140,9 +140,9 @@ function App() {
                 </div>
 
                  <div className='w-full  sm:px-8'>
-                   <label className='w-full flex justify-between bg-zinc-900 px-4 py-3 rounded-md border border-slate-700/40 '>
-                      <input type="text" className='w-[30vw] bg-zinc-900 text-md md:text-lg md:w-[24rem] pr-2' placeholder="✨ Who's our most profitable customer?" />
-                    
+                   <label className='w-full flex justify-between bg-zinc-900 px-4 py-2 rounded-xl border border-slate-700/40 '>
+                      {/* <input type="text" className='w-[30vw] bg-zinc-900 text-md md:text-lg md:w-[24rem] pr-2' placeholder="✨ Who's our most profitable customer?" /> */}
+                      <div className='flex items-center w-[30vw] bg-zinc-900 text-md md:text-lg md:w-[24rem] pr-2 text-zinc-500'>✨ Who's our most profitable customer?</div>
                       <div className='container'>
                         <button className='bg-black p-3 rounded-lg w-28 bordaRgb'>Ask Genius</button>
                         <div className='colorido'></div>
