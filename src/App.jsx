@@ -15,7 +15,7 @@ function App() {
     <body className="bg-black overflow-x-hidden">
       <header >
         <div className='headerBg'></div>
-        <nav className="w-full h-10 flex justify-between items-center sm:px-10  xl:px-56 pt-8">
+        <nav className="w-full h-10 flex justify-between items-center sm:px-10 px-6  xl:px-56 pt-8">
           <div className='font-bold flex items-center gap-x-1'>
             <img src={logo} alt="" />
               Cobalt
@@ -177,9 +177,9 @@ function App() {
               <article className='flex flex-col gap-6 mt-14'>
                 <div className='flex justify-between gap-4 flex-wrap'>
                       <div className='flex gap-4 max-w-7xl'>
-                        <p className='w-44 md:w-[18.4rem]'> © 2023 Cobalt Financial Technologies Inc.</p>
-                        <p >Privacy Policy</p>
-                        <p >Terms of Use</p>
+                        <a href='#' className='w-44 md:w-[18.4rem] hover:underline hover:cursor-pointer'> © 2023 Cobalt Financial Technologies Inc.</a>
+                        <a href='#'  className='hover:underline hover:cursor-pointer'>Privacy Policy</a>
+                        <a href='#'  className='hover:underline hover:cursor-pointer'>Terms of Use</a>
                       </div>
                       <div className='flex gap-4'>
                         <X/>
