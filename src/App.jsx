@@ -1,3 +1,4 @@
+import 'animate.css';
 import dashUrl from './assets/dash.png'
 import logo from './assets/logo.svg'
 import donwarrow from './assets/donwarrow.svg'
@@ -11,7 +12,7 @@ import './app.css'
 function App() {
 
   return (
-    <body className="bg-black ">
+    <body className="bg-black overflow-x-hidden">
       <header >
         <div className='headerBg'></div>
         <nav className="w-full h-10 flex justify-between items-center sm:px-10  xl:px-56 pt-8">
@@ -33,20 +34,20 @@ function App() {
           Intuitive. <br /> And never boring.
            </p>
            <JoinButton/>
-           <div className='flex flex-col items-center gap-y-2'>
-             <p className="w-fit text-gray-600 font-">Learn More</p>
-             <img src={donwarrow} alt="" />
-           </div>
+           <a href='#rolagem' id='learnButton' className='flex flex-col items-center gap-y-2 mt-6 animate__animated animate__bounce animate__infinite	animate__slow'>
+             <p className="w-fit text-gray-600 ">Learn More</p>
+             <img src={donwarrow} className='' alt="" />
+           </a>
         </section>
       </header>
-      <main className=' px-6 sm:px-10  xl:px-56 py-4'>
+      <main className=' px-6 sm:px-10  xl:px-36 py-4'>
         
-        <section className=''>
-          <img src={dashUrl}  />
+        <section >
+          <img  src={dashUrl}  />
         </section>
         <section className='flex  gap-y-8 gap-x-8 mt-20 flex-wrap max-w-full justify-between'>
-          <h1 className='flex justify-center font-bold text-5xl text-left max-w-[35rem] lg:text-6xl'>Who said finance has to be boring? </h1>
-          <p className='text-left max-w-[50rem] font-normal text-xl lg:text-2xl text-gray-400'>
+          <h1 id='rolagem'  className='flex justify-center font-bold text-5xl text-left max-w-[35rem] lg:text-5xl'>Who said finance has to be boring? </h1>
+          <p className='text-left max-w-[40rem] font-normal text-xl  text-gray-400'>
           With Cobalt, managing your business finances is effortless, 
           empowering, and anything but boring. Our intuitive platform brings 
           clarity to your cash flow, simplifies your financial decision-making, and 
@@ -56,10 +57,10 @@ function App() {
         </section>
         <section className='mt-36 gap-y-14 flex flex-col'>
           <div className='flex flex-col gap-y-8'>
-            <h1 className='flex justify-center font-bold text-5xl text-left max-w-[35rem] lg:text-6xl'>Everything you need.
+            <h1 className='flex justify-center font-bold text-5xl text-left max-w-[35rem] lg:text-5xl'>Everything you need.
             Nothing you don’t
             </h1>
-            <p className='text-left max-w-[50rem] font-normal text-xl lg:text-2xl text-gray-400'>
+            <p className='text-left max-w-[38rem] font-normal text-xl  text-gray-400'>
               finacial managemement and visibility in one place. Experience <span>a flexible toolkit </span> 
               that makes every task feel lieke a breeze
              </p>
@@ -90,8 +91,8 @@ function App() {
                 {/* <div className='img-bg'> </div> */}
                 <img src={img4} className=''/>
                 < div className='p-8 gap-4 flex flex-col '>
-                   <h1 className='font-bold text-xl lg:text-2xl'>Connect all your apps</h1>
-                   <p className='text-zinc-400 w-6/12 lg:text-lg'>
+                   <h1 className='font-bold text-xl '>Connect all your apps</h1>
+                   <p className='text-zinc-400 w-6/12 text-lg'>
                    Bring your data with our built-in integrations for 
                    accounting, revenue tools and banking.
                   </p>
@@ -114,24 +115,24 @@ function App() {
         </section>
         <section className=' mt-36 flex flex-col gap-14'>
           <div className=' flex flex-col gap-y-8'>
-            <h1 className='flex  font-bold text-5xl lg:text-7xl text-center'>Meet Genius</h1>
-            <p className='text-zinc-400 lg:text-lg'>Our AI-driven assistant is designed to decode complex financial 
+            <h1 className='flex  font-bold text-5xl text-center'>Meet Genius</h1>
+            <p className='max-w-[31em] text-zinc-400 lg:text-lg'>Our AI-driven assistant is designed to decode complex financial 
             figures and <span>illuminate key trends</span> in your business.
             </p>
           </div>
           <article className='flex justify-center gap-8 flex-wrap'>
-             <div className='bg-zinc-950 rounded-xl border border-zinc-800 flex flex-col items-start flex-1 min-w-2xl'>
+             <div className='smartCard bg-zinc-950 rounded-xl border border-zinc-800 flex flex-col items-start min-w-2xl'>
                 <div className=''><img src={img6} className=''/></div>
                 < div className='p-8 gap-4 flex flex-col'>
                    <h1 className='font-bold text-xl lg:text-2xl'>Smart forecasting</h1>
-                   <p className='text-zinc-400 lg:text-lg'>
+                   <p className='text-zinc-400 text-md max-w-[27rem]'>
                    Harness the power of Cobalt's predictive analytics to map 
                    out the financial future of your business.
                   </p>
                 </div>
               </div>
 
-              <div className='bg-zinc-950 rounded-xl border border-zinc-800 flex flex-col items-end flex-1 gap-6 p-4'>
+              <div className='askCard bg-zinc-950 rounded-xl border border-zinc-800 flex flex-col items-end flex-1 gap-6 p-4'>
 
                 <div className='flex flex-col justify-center items-center h-2/5 w-full'>
                   <div className='bg-cyan-500/[.30] p-2 rounded-2xl'>
@@ -139,20 +140,20 @@ function App() {
                   </div>
                 </div>
 
-                 <div className='w-full  sm:px-8'>
-                   <label className='w-full flex justify-between bg-zinc-900 px-4 py-2 rounded-xl border border-slate-700/40 '>
+                 <div className='w-full sm:px-8 '>
+                   <label className='w-full flex items-center justify-between bg-zinc-900 px-4 py-2 rounded-xl border border-slate-700/40 '>
                       {/* <input type="text" className='w-[30vw] bg-zinc-900 text-md md:text-lg md:w-[24rem] pr-2' placeholder="✨ Who's our most profitable customer?" /> */}
-                      <div className='flex items-center w-[30vw] bg-zinc-900 text-md md:text-lg md:w-[24rem] pr-2 text-zinc-500'>✨ Who's our most profitable customer?</div>
-                      <div className='container'>
+                      <div className='flex items-center max-w-[50vw]  bg-zinc-900 text-md md:text-lg  pr-2 text-zinc-500 '>✨ Who's our most profitable customer?</div>
+                      <div className='flex container'>
                         <button className='bg-black p-3 rounded-lg w-28 bordaRgb'>Ask Genius</button>
                         <div className='colorido'></div>
                       </div>
                    </label>
                  </div>
 
-                < div className='p-8 gap-4 flex flex-col '>
+                < div className='p-8 gap-4 flex flex-col w-full '>
                    <h1 className='pt-4 font-bold text-xl lg:text-2xl'>Chat with Genius</h1>
-                   <p className='text-zinc-400 lg:text-lg'>
+                   <p className='text-zinc-400 text-md max-w-[23rem]'>
                    Just ask. With Genius by your side, navigating the 
                    financial maze becomes intuitive and effortless.
                   </p>
@@ -169,8 +170,8 @@ function App() {
       <footer>
         <section className='mt-32 flex flex-col  px-10  xl:px-56'>
               <article className=' flex flex-col items-center gap-14 pb-32 border-b border-slate-800/70'>
-                  <h1 className='font-bold text-3xl lg:text-5xl text-center max-w-[55rem] secFinal pt-32'>See where financial automation can take your business.</h1>
-                  <p className=' text-center justify-center text-slate-300 text-xl lg:text-2xl max-w-5xl font-normal'>The first financial tool you'll love. And the last one you'll ever need.</p>
+                  <h1 className='font-bold text-3xl lg:text-4xl text-center max-w-[40rem] secFinal pt-32'>See where financial automation can take your business.</h1>
+                  <p className=' text-center justify-center text-slate-300 text-xl  max-w-5xl font-normal'>The first financial tool you'll love. And the last one you'll ever need.</p>
                   <JoinButton/>
               </article>
               <article className='flex flex-col gap-6 mt-14'>
