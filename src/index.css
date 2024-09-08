@@ -49,7 +49,7 @@ header{
   transition: 0.1s;
 }
 
-.bordaRgb:hover {
+button.bordaRgb:hover {
   scale: 1.03;
 }
 
@@ -119,7 +119,7 @@ left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
 
-background: linear-gradient(90deg, #06B6D4 0%, #1E40AF 100%);
+background: linear-gradient(90deg, rgb(6, 182, 212) 0%, rgb(30, 64, 175) 100%);
 mix-blend-mode: normal;
 opacity: 0.15;
 filter: blur(5rem);
@@ -163,4 +163,20 @@ footer{
   flex-grow: 10;
   flex-basis: 576px;
   height: 600px;
+}
+
+.img-bg{
+  background-image: url(assets/card/img4.png);
+  background-size: cover;
+  width: 100%;
+  height: 60%;
+}
+
+.logoShadow{
+  transition: 0.5s;
+}
+
+.logoShadow:hover{
+  text-shadow: 1px 1px 10px rgb(6, 182, 212);
+  cursor: pointer;
 }
