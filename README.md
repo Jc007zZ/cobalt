@@ -1,8 +1,24 @@
-# React + Vite
+# Cobalt Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma landing page desenvolvida para a Cobalt, uma empresa que oferece ferramentas financeiras e de investimentos. O objetivo da página é fornecer uma interface moderna e responsiva, destacando os principais produtos e serviços oferecidos pela empresa.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
+**React:** Biblioteca JavaScript para construção de interfaces de usuário. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Tailwind CSS:** Framework CSS para estilização, permitindo um design responsivo e eficiente.
+
+**Vite**: Ferramenta de build rápida e otimizada para desenvolvimento front-end moderno, com suporte a HMR (Hot Module Replacement)
+
+# Funcionalidades
+**Layout Responsivo:** A página se adapta perfeitamente a diferentes tamanhos de tela, proporcionando uma experiência consistente em dispositivos móveis, tablets e desktops.
+
+**Componentização:** Utilização de componentes React para modularizar a interface e facilitar futuras manutenções.
+
+**Design Moderno:** Estilo visual limpo e moderno com ajuda do Tailwind CSS para oferecer uma experiência de usuário aprimorada.
+
+# Deploy
+
+[https://cobalt-tan-delta.vercel.app/](https://cobalt-tan-delta.vercel.app/)
+
+# Contribuições
+Sinta-se à vontade para enviar sugestões ou contribuir com o projeto por meio de pull requests.
