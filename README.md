@@ -7,7 +7,7 @@ Este projeto é uma landing page desenvolvida para a Cobalt, uma empresa que ofe
 
 **Tailwind CSS:** Framework CSS para estilização, permitindo um design responsivo e eficiente.
 
-**Vite**: ferramenta de build rápida e otimizada para desenvolvimento front-end moderno, com suporte a HMR (Hot Module Replacement)
+**Vite**: Ferramenta de build rápida e otimizada para desenvolvimento front-end moderno, com suporte a HMR (Hot Module Replacement)
 
 # Funcionalidades
 **Layout Responsivo:** A página se adapta perfeitamente a diferentes tamanhos de tela, proporcionando uma experiência consistente em dispositivos móveis, tablets e desktops.
